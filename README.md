@@ -27,7 +27,7 @@ Run the project
 Run the following command to generate modules with Lazy Loading:
 
 ```bash
-    ng generate module modules/[new_module] --route modules/[new_module] --module app.module
+  ng generate module modules/[new_module] --route modules/[new_module] --module app.module
 ```
 
 ## 🛠️ Testing
