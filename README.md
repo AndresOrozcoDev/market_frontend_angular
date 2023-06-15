@@ -22,6 +22,14 @@ Run the project
   ng serve
 ```
 
+## 💻 Code scaffolding
+
+Run the following command to generate modules with Lazy Loading:
+
+```bash
+    ng generate module modules/[new_module] --route modules/[new_module] --module app.module
+```
+
 ## 🛠️ Testing
 
 For unit tests [Karma](https://karma-runner.github.io) is used, for the execution of these tests execute the following command:
