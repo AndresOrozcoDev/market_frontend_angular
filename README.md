@@ -1,27 +1,35 @@
-# Market
+# Market - Frontend Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+Frontend project based on [Angular CLI](https://github.com/angular/angular-cli) v15.2.4 and [Node](https://nodejs.org/en) v16.13.0 to pull web services on CRUD of supermarkets, categories and products.
 
-## Development server
+## 🧰 Installating
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Clone the repo
 
-## Code scaffolding
+```bash
+  git clone https://github.com/AndresOrozcoDev/market_frontend_angular.git
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Install dependencies
 
-## Build
+```bash
+  npm install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run the project
 
-## Running unit tests
+```bash
+  ng serve
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🛠️ Testing
 
-## Running end-to-end tests
+For unit tests [Karma](https://karma-runner.github.io) is used, for the execution of these tests execute the following command:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+  ng test
+```
 
-## Further help
+## ✍️ Author
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [@AndresOrozcoDev](https://github.com/AndresOrozcoDev)
