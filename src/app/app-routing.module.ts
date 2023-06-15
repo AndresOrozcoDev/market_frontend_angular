@@ -4,7 +4,8 @@ import { loginGuard } from './utils/guards/loginGuard';
 
 const routes: Routes = [
   { path: '', loadChildren: () => import('./modules/auth/auth.module').then(m => m.AuthModule) },
-  { path: 'dashboard', loadChildren: () => import('./modules/dashboard/dashboard.module').then(m => m.DashboardModule), canActivate: [loginGuard], }
+  { path: 'dashboard', loadChildren: () => import('./modules/dashboard/dashboard.module').then(m => m.DashboardModule), canActivate: [loginGuard], },
+  { path: '**', loadChildren: () => import('./modules/page-not-found/page-not-found.module').then(m => m.PageNotFoundModule) }
 ];
 
 @NgModule({
