@@ -8,6 +8,7 @@ Clone the repo
 
 ```bash
   git clone https://github.com/AndresOrozcoDev/market_frontend_angular.git
+  cd market_frontend_angular
 ```
 
 Install dependencies
@@ -40,4 +41,4 @@ For unit tests [Karma](https://karma-runner.github.io) is used, for the executio
 
 ## ✍️ Author
 
-- [@AndresOrozcoDev](https://github.com/AndresOrozcoDev)
+- [AndresOrozcoDev](https://github.com/AndresOrozcoDev)
