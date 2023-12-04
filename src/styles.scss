@@ -1,5 +1,44 @@
+// Variables
+$color-blue-dark: #140648;
+$color-blue-light: #2e54ea;
+$color-white: #fff;
+$color-black: #000;
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Euclidsquare webs,sans-serif;
+}
+
+.button {
+    width: auto;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 0;
+    cursor: pointer;
+    transition: transform .2s;
+
+    &--primary {
+        color: $color-white;
+        background-color: $color-blue-light;
+    }
+
+    &--secondary {
+        color: $color-blue-light;
+        background-color: $color-white;
+    }
+
+    &:hover {
+        transform: translateY(-0.125rem);
+    }
 }
