@@ -1,10 +1,10 @@
 <header class="header">
     <div class="header--wrapper">
         <a href="/" class="logo">
-            <p class="text--big text--white">Market</p>
+            <span class="text--big text--primary">Market</span>
         </a>
         <div class="buttons--wrapper">
-            <input type="button" class="button button--primary" *ngIf="!isLogged" value="Login" title="Login" routerLink="/login">
+            <input type="button" class="button button--primary" *ngIf="!isLogged" value="Log in" title="Log in" routerLink="/login">
             <input type="button" class="button button--secondary" *ngIf="!isLogged" value="Sign up" title="Sign up" routerLink="/register">
             <input type="button" class="button button--secondary" *ngIf="isLogged" value="Logout" title="Logout" (click)="logout()">
         </div>

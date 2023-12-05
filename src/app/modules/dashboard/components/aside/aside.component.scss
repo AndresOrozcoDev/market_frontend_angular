@@ -1,0 +1,18 @@
+@import '../../../../../styles.scss';
+
+.container__menu {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    li {
+        padding: 8px 15px 8px 20px;
+        color: $color-secondary-gray-dark;
+        
+        &:last-child {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+}

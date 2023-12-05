@@ -1,10 +1,11 @@
 // Variables
-$color-blue-dark: #140648;
-$color-blue-light: #2e54ea;
+$color-primary-blue-dark: #140648;
+$color-primary-blue-light: #2e54ea;
 $color-white: #fff;
 $color-black: #000;
 $color-error: red;
-$color-gray-ligth: #c3c3c3;
+$color-secondary-gray-dark: #6d7280;
+$color-secondary-gray-light: #f9fafb;
 
 $border-radius: 0.25rem;
 
@@ -34,12 +35,13 @@ $border-radius: 0.25rem;
 
     &--primary {
         color: $color-white;
-        background-color: $color-blue-light;
+        background-color: $color-primary-blue-light;
     }
 
     &--secondary {
-        color: $color-blue-light;
+        color: $color-primary-blue-light;
         background-color: $color-white;
+        border: 1px solid $color-primary-blue-light;
     }
 
     &:hover {
@@ -77,6 +79,14 @@ $border-radius: 0.25rem;
         color: $color-white;
     }
 
+    &--primary {
+        color: $color-primary-blue-light;
+    }
+
+    &--secondary {
+        color: $color-secondary-gray-light;
+    }
+
     &--error {
         color: $color-error;
     }
@@ -100,7 +110,7 @@ form {
 
         input[type="password"], input[type="email"] {
             height: 30px;
-            border: 1px solid $color-gray-ligth;
+            border: 1px solid $color-secondary-gray-dark;
             border-radius: $border-radius;
             font-size: 1rem;
             padding: 0 0.5rem;

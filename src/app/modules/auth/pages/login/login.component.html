@@ -2,19 +2,19 @@
     <div class="container__form">
         <form [formGroup]="loginForm" (ngSubmit)="login($event)" class="form__login">
             <div>
-                <p class="text--big text--black">Welcome back</p>
+                <span class="text--big text--black">Welcome back</span>
             </div>
             <div class="formGroup">
                 <label for="email">Email:</label>
-                <input type="email" formControlName="email" id="email" placeholder="Enter you email">
+                <input type="email" formControlName="email" id="email" placeholder="example@domain.com">
             </div>
             <div class="formGroup">
                 <label for="password">Password:</label>
-                <input type="password" formControlName="password" id="password" placeholder="Enter your password">
+                <input type="password" formControlName="password" id="password" placeholder="********">
             </div>
-            <p class="text--msg text--error visibility" *ngIf="isErrorForm">Credentials incorrect</p>
+            <span class="text--msg text--error visibility" *ngIf="isErrorForm">Credentials incorrect</span>
             <div>
-                <input type="submit" class="button button--primary" value="Login" title="Login">
+                <input type="submit" class="button button--primary" value="Log in" title="Log in">
             </div>
         </form>
     </div>
