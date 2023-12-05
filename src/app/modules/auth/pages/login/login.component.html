@@ -1,1 +1,21 @@
-<p>login works!</p>
+<main class="container">
+    <div class="container__form">
+        <form [formGroup]="loginForm" (ngSubmit)="login($event)" class="form__login">
+            <div>
+                <p class="text--big text--black">Welcome back</p>
+            </div>
+            <div class="formGroup">
+                <label for="email">Email:</label>
+                <input type="email" formControlName="email" id="email" placeholder="Enter you email">
+            </div>
+            <div class="formGroup">
+                <label for="password">Password:</label>
+                <input type="password" formControlName="password" id="password" placeholder="Enter your password">
+            </div>
+            <p class="text--msg text--error visibility" *ngIf="isErrorForm">Credentials incorrect</p>
+            <div>
+                <input type="submit" class="button button--primary" value="Login" title="Login">
+            </div>
+        </form>
+    </div>
+</main>

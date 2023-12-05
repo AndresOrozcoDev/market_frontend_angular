@@ -1,0 +1,28 @@
+@import '../../../../../styles.scss';
+
+.container {
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__form {
+        border: 1px solid $color-gray-ligth;
+        border-radius: $border-radius;
+        background-color: $color-white;
+        width: min(100% - 10%, 500px);
+        margin-inline: auto;
+
+        .form__login {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            div:first-child, div:last-child {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

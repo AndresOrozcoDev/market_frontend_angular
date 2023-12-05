@@ -3,6 +3,10 @@ $color-blue-dark: #140648;
 $color-blue-light: #2e54ea;
 $color-white: #fff;
 $color-black: #000;
+$color-error: red;
+$color-gray-ligth: #c3c3c3;
+
+$border-radius: 0.25rem;
 
 
 * {
@@ -14,7 +18,7 @@ $color-black: #000;
 
 .button {
     width: auto;
-    border-radius: 0.25rem;
+    border-radius: $border-radius;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,5 +44,66 @@ $color-black: #000;
 
     &:hover {
         transform: translateY(-0.125rem);
+    }
+}
+
+.text {
+    &--big{
+        font-size: 22px;
+        font-weight: 900;
+        letter-spacing: 0px;
+    }
+    &--medium{
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0px;
+    }
+    &--small{
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0px;
+    }
+    &--msg{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    &--black {
+        color: $color-black;
+    }
+
+    &--white {
+        color: $color-white;
+    }
+
+    &--error {
+        color: $color-error;
+    }
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    margin-bottom: 2px;
+    line-height: 1.5;
+}
+
+form {
+    padding: 2rem 1rem;
+
+    .formGroup {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+
+        input[type="password"], input[type="email"] {
+            height: 30px;
+            border: 1px solid $color-gray-ligth;
+            border-radius: $border-radius;
+            font-size: 1rem;
+            padding: 0 0.5rem;
+        }
     }
 }

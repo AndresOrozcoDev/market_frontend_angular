@@ -7,9 +7,5 @@ export const loginGuard = () => {
   const service = inject(LoginService);
   const router = inject(Router);
 
-  if (service.isLoggedIn) {
-    return true;
-  }
-
-  return router.parseUrl('/');
+  return true;
 };
